@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-image: url("./UI/purplebg.png");
+    background-size: cover;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(255, 197, 47, 1);
+    padding: 0%;
+    margin: 0%;
+    font-weight: 400;
+    font-size:20px;
+}
+
+header{
+    display: flex;
+    width: 70%;
+    height: 20vh;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo, 
+.links{
+    display: flex;
+}
+
+img{
+    flex: 1;
+    margin-right: 70vh;
+}
+nav{
+    flex:1;
+}
+/*logo*/
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+/*navbar*/
+.links li{
+    flex: 2;
+    flex-direction: flex-end;
+    justify-content: space;
+    text-align: center;
+    list-style: none;
+}
+
+.links li a{
+    margin: 0%;
+    justify-content: center;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.links li a:hover{
+    color:aliceblue;
+    text-shadow: 2px 2px 20px darkorange;
+    text-decoration: underline;
+    animation: bar ease-in 1s;
+}
+
+@keyframes bar {
+    0%{
+        text-decoration: underline 0px;
+    }
+
+    100%{
+        text-decoration: underline;
+    }
+}
+
+
+
+
