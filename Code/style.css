@@ -28,6 +28,7 @@ header{
     width: 70%;
     height: 20vh;
     margin: auto;
+    margin-top: 2%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -155,6 +156,7 @@ nav{
 .CM::before{
     content: '';
     position: absolute;
+    background: black;
 }
 
 .CM span{
