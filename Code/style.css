@@ -54,6 +54,17 @@ nav{
     width: 130px;
     border-radius: 100px;
 }
+/*logo animation*/
+img{
+    opacity: 0;
+    animation: img 3s ease-out forwards;
+}
+
+@keyframes img {
+    to{
+        opacity: 1;
+    }
+}
 
 /*navbar*/
 
@@ -80,11 +91,36 @@ li a{
 }
 
 /*Animating Navbar for page loading*/
-
-header, nav{
+li.A{
     opacity: 0;
     transform: translateY(-5rem);
-    animation: head 0.8s ease-out forwards;
+    animation: head 1s ease-out forwards;
+}
+
+@keyframes head {
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+li.B{
+    opacity: 0;
+    transform: translateY(-5rem);
+    animation: head 1.2s ease-out forwards;
+}
+
+@keyframes head {
+    to{
+        transform: translate(0);
+        opacity: 1.4;
+    }
+}
+
+li.C{
+    opacity: 0;
+    transform: translateY(-5rem);
+    animation: head 1.6s ease-out forwards;
 }
 
 @keyframes head {
