@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 body{
-    background-image: url("./UI/purplebg.png");
+    background-image: url("./UI/blacckbg.png");
     background-size: cover;
 }
 
@@ -16,7 +19,8 @@ html{
     padding: 0%;
     margin: 0%;
     font-weight: 400;
-    font-size:20px;
+    font-size:40px;
+    box-sizing: border-box;
 }
 
 header{
@@ -35,15 +39,14 @@ header{
 
 img{
     flex: 1;
-    margin-right: 70vh;
+    margin-right: 60vh;
 }
 nav{
     flex:1;
 }
 /*logo*/
 .logo img{
-    width: 50px;
-    height: 50px;
+    width: 130px;
     border-radius: 100px;
 }
 
@@ -59,7 +62,8 @@ nav{
 .links li a{
     margin: 0%;
     justify-content: center;
-    font-size: 15px;
+    font-size: 24px;
+    font-family: 'Gothic A1', sans-serif;
     text-decoration: none;
 }
 
@@ -95,24 +99,104 @@ nav{
 }
 
 .intro-left p{
-    font-size: 15px;
+    font-size: 25px;
     color: white;
     margin-left: 5%;
     font-family: 'Nixie One', cursive;
 }
 
 .intro-left h1{
-    font-size: 55px;
-    font-family: 'Signika Negative', sans-serif;
+    font-size: 100px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 900;
 }
 
+/*right side of txt*/
 .intro-right{
+    margin-top: 5%;
     align-items: center;
 }
+
 .intro-right p{
-    font-size: 18px;
-    margin: 4%;
-    padding: 2%;
-    width: 300px;
+    font-size: 29px;
+    font-family: 'Nixie One', cursive;
+    font-weight: 100;
+    margin: 1%;
+    padding: 3%;
+    width: 600px;
     color: white;
+}
+
+/*button to contact me*/
+.CM{
+    margin: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 0%;
+    color: white;
+    border: 0;
+    background-color: transparent;
+    letter-spacing: 0.01em;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.CM button{
+    color: white;
+}
+
+.CM:hover{
+    color: black;
+    size: 15px;
+    box-shadow: 0 0 35px rgba(255, 197, 47, 1);
+    letter-spacing: 0.1em;
+}
+
+.CM::before{
+    content: '';
+    position: absolute;
+}
+
+.CM span{
+    position: relative;
+    z-index: 1;
+}
+
+.CM i{
+    position: absolute;
+    display: block;
+}
+
+.CM i::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:80%;
+    width: 10px;
+    height: 4px;
+    background: white;
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.CM:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+
+.CM i::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left:20%;
+    width: 10px;
+    height: 4px;
+    background: white;
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.CM:hover i::after{
+    width: 20px;
+    left: 80%;
 }
