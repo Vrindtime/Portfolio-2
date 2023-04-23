@@ -20,7 +20,6 @@ html{
     margin: 0%;
     font-weight: 400;
     font-size:40px;
-    box-sizing: border-box;
 }
 
 header{
@@ -115,24 +114,92 @@ nav{
     padding: 3%;
     width: 600px;
     color: white;
+    box-sizing: border-box;
 }
 
 /*button to contact me*/
 .CM{
-    margin: 50%;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin: 20%;
+    margin-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
     border-radius: 0%;
+    background-color: transparent;
+    font-size: 50px;
+}
+/*general properties of the txt box*/
+button{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #FFD057;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+   
 }
 
-.CM a{
-    color: rgba(255, 208, 87, 1);;
-}
-
-.CM:hover{
+button:hover{
     color: black;
-    size: 25px;
-    text-shadow: 0 0 35px rgba(255, 208, 87, 1);
+    background:rgba(255, 208, 87, 1);
+    box-shadow: 0 0 10px #FFD057;
+    box-shadow: 0 0 40px #FFD057;
+    box-shadow: 0 0 80px #FFD057;
+    transition-delay: 0.3s;
 }
 
+button span{
+    position: absolute;
+    display: block;
+}
+
+button span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#FFD057);
+}
+button:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+button span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#FFD057);
+}
+button:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+}
+
+button span:nth-child(2){
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#FFD057);
+}
+button:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+}
+
+button span:nth-child(4){
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#FFD057);
+}
+button:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+}
