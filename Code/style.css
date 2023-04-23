@@ -51,7 +51,8 @@ nav{
 }
 
 /*navbar*/
-.links li{
+
+li{
     flex: 2;
     flex-direction: flex-end;
     justify-content: space;
@@ -59,19 +60,19 @@ nav{
     list-style: none;
 }
 
-.links li a{
+li a{
     margin: 0%;
     justify-content: center;
     font-size: 24px;
     font-family: 'Gothic A1', sans-serif;
     text-decoration: none;
+    color:rgba(255, 208, 87, .75)
 }
 
 .links li a:hover{
-    color:aliceblue;
+    color:rgba(255, 208, 87, 1);
     text-shadow: 0px 0px 40px rgba(255, 208, 87, 1);
 }
-
 
 /*my text components on Portfolio page*/
 
@@ -89,7 +90,7 @@ nav{
 
 .intro-left p{
     font-size: 25px;
-    color: white;
+    color: #e0e0e0;
     margin-left: 5%;
     font-family: 'Nixie One', cursive;
 }
@@ -113,7 +114,7 @@ nav{
     margin: 1%;
     padding: 3%;
     width: 600px;
-    color: white;
+    color: #e0e0e0;
     box-sizing: border-box;
 }
 
@@ -143,7 +144,7 @@ button{
 }
 
 button:hover{
-    color: black;
+    color: rgb(53, 53, 53);
     background:rgba(255, 208, 87, 1);
     box-shadow: 0 0 10px #FFD057;
     box-shadow: 0 0 40px #FFD057;
