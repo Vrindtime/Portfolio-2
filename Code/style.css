@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root{
+    --halfyellow: rgba(255, 208, 87, .7);
+    --yellow: #FFD057;
+    --grey: #e0e0e0;
+}
 
 body{
     background-image: url("./UI/blacckbg.png");
@@ -74,6 +79,21 @@ li a{
     text-shadow: 0px 0px 40px rgba(255, 208, 87, 1);
 }
 
+/*Animating Navbar for page loading*/
+
+header, nav{
+    opacity: 0;
+    transform: translateY(-5rem);
+    animation: head 0.8s ease-out forwards;
+}
+
+@keyframes head {
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
 /*my text components on Portfolio page*/
 
 .main{
@@ -88,6 +108,19 @@ li a{
     margin-top: 3%;
 }
 
+main .intro-left{
+    opacity: 0;
+    transform: translateX(-5rem);
+    animation: inle 0.8s ease-out forwards;
+}
+
+@keyframes inle {
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
 .intro-left p{
     font-size: 25px;
     color: #e0e0e0;
@@ -99,6 +132,19 @@ li a{
     font-size: 100px;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 900;
+}
+
+main .intro-left h1{
+    opacity: 0;
+    transform: translateX(3rem);
+    animation: inri 1.5s ease-out forwards;
+}
+
+@keyframes inri {
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
 }
 
 /*right side of txt*/
@@ -116,6 +162,19 @@ li a{
     width: 600px;
     color: #e0e0e0;
     box-sizing: border-box;
+}
+
+main .intro-right{
+    opacity: 0;
+    transform: translateX(5rem);
+    animation: inri 1s ease-out forwards;
+}
+
+@keyframes inri {
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
 }
 
 /*button to contact me*/
@@ -203,4 +262,17 @@ button span:nth-child(4){
 button:hover span:nth-child(4){
     bottom: 100%;
     transition: 1s;
+}
+
+main button{
+    opacity: 0;
+    transform: translateX(5rem);
+    animation: but 1s ease-out forwards;
+}
+
+@keyframes but {
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
 }
