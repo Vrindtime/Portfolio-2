@@ -215,13 +215,13 @@ main .intro-right{
 
 /*button to contact me*/
 .CM{
-    margin: 20%;
+    margin: 10%;
     margin-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     border-radius: 0%;
     background-color: transparent;
-    font-size: 30px;
+    font-size: 25px;
 }
 /*general properties of the txt box*/
 button{
@@ -311,4 +311,10 @@ main button{
         transform: translate(0);
         opacity: 1;
     }
+}
+
+hr{
+    size: 1px;
+    border: dashed.5px;
+    color: rgb(245, 236, 187);
 }
