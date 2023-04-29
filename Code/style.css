@@ -216,12 +216,12 @@ main .intro-right{
 /*button to contact me*/
 .CM{
     margin: 20%;
-    margin-top: 15%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 0%;
     background-color: transparent;
-    font-size: 50px;
+    font-size: 30px;
 }
 /*general properties of the txt box*/
 button{
@@ -232,7 +232,7 @@ button{
     text-transform: uppercase;
     letter-spacing: 4px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     overflow: hidden;
     transition: 0.2s;
    
