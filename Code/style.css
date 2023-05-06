@@ -318,3 +318,26 @@ hr{
     border: dashed.5px;
     color: rgb(245, 236, 187);
 }
+
+/*SEE (Skill and Exerience section)*/
+
+.see{
+    display: flex;
+    padding: 5%;
+    gap: 7%;
+}
+
+
+.see h2{
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.see p{
+    font-size: 25px;
+    font-family: 'Nixie One', cursive;
+    font-weight: 200;
+    width: 500px;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
