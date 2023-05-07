@@ -320,25 +320,40 @@ hr{
 }
 
 /*see: (Skill and Exerience section)*/
-/*SEC: Skill Experience Container*/
-.SEC{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-    gap: 7%;
-}
-
 .see{
-    display: flex;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "se e1 e2"
+    ". e3 .";
     gap: 7%;
 }
 
-.SEC h2{
+.skill{
+    grid-area: se;
+}
+
+.ex1{
+    grid-area: e1;
+}
+
+.ex2{
+    grid-area: e2;
+}
+
+.ex3{
+    grid-area: e3;
+}
+
+.see h2{
     font-weight: 500;
     font-size: 60px;
 }
 
-.SEC p{
+.see p{
     font-size: 25px;
     font-family: 'Nixie One', cursive;
     font-weight: 200;
@@ -347,12 +362,8 @@ hr{
     box-sizing: border-box;
 }
 
-.ex_top{
-    display: flex;
-    gap: 7%;
-}
+/*Section footer*/
 
-.ex-bottom{
-    display: flex;
-    justify-content: flex-end;
+.footer{
+    
 }
