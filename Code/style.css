@@ -7,6 +7,7 @@
     --halfyellow: rgba(255, 208, 87, .7);
     --yellow: #FFD057;
     --grey: #e0e0e0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -224,7 +225,7 @@ main .intro-right{
     font-size: 25px;
 }
 /*general properties of the txt box*/
-button{
+.CM{
     position: relative;
     display: inline-block;
     padding: 15px 30px;
@@ -238,7 +239,7 @@ button{
    
 }
 
-button:hover{
+.CM:hover{
     color: rgb(53, 53, 53);
     background:rgba(255, 208, 87, 1);
     box-shadow: 0 0 10px #FFD057;
@@ -247,60 +248,60 @@ button:hover{
     transition-delay: 0.3s;
 }
 
-button span{
+.CM span{
     position: absolute;
     display: block;
 }
 
-button span:nth-child(1){
+.CM span:nth-child(1){
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg,transparent,#FFD057);
 }
-button:hover span:nth-child(1){
+.CM:hover span:nth-child(1){
     left: 100%;
     transition: 1s;
 }
 
-button span:nth-child(3){
+.CM span:nth-child(3){
     bottom: 0;
     right: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg,transparent,#FFD057);
 }
-button:hover span:nth-child(3){
+.CM:hover span:nth-child(3){
     right: 100%;
     transition: 1s;
 }
 
-button span:nth-child(2){
+.CM span:nth-child(2){
     top: -100%;
     right: 0%;
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg,transparent,#FFD057);
 }
-button:hover span:nth-child(2){
+.CM:hover span:nth-child(2){
     top: 100%;
     transition: 1s;
 }
 
-button span:nth-child(4){
+.CM span:nth-child(4){
     bottom: -100%;
     left: 0%;
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg,transparent,#FFD057);
 }
-button:hover span:nth-child(4){
+.CM:hover span:nth-child(4){
     bottom: 100%;
     transition: 1s;
 }
 
-main button{
+main .CM{
     opacity: 0;
     transform: translateX(5rem);
     animation: but 1s ease-out forwards;
@@ -321,15 +322,15 @@ hr{
 
 /*see: (Skill and Exerience section)*/
 .see{
-    padding: 5%;
+    padding: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "se e1 e2"
-    ". e3 .";
-    gap: 7%;
+    "tl e3 e4";
+    gap: 5%;
 }
 
 .skill{
@@ -348,6 +349,70 @@ hr{
     grid-area: e3;
 }
 
+.ex4{
+    grid-area: e4;
+}
+
+.timeline{
+    grid-area: tl;
+}
+
+.timeline{
+    position: relative;
+    top: -20%;
+    margin: 69px;
+    width: 360px;
+    border-left: 2px solid #ccc;
+    padding: 0 20px 0 30px;
+}
+
+.timeline div{
+    padding: 10px 25px;
+    font-size: 16px;
+    height: 110px;
+}
+
+.timeline div::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 25px;
+    left: -9px;
+}
+
+.timeline div::after{
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 163px;
+    left: -9px;
+}
+
+.timeline div span::after{
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 295px;
+    left: -9px;
+}
+
 .see h2{
     font-weight: 500;
     font-size: 60px;
@@ -362,8 +427,98 @@ hr{
     box-sizing: border-box;
 }
 
+/*SE Animation (parralax scrolling)*/
+
+
+
 /*Section footer*/
 
 .footer{
-    
+    padding: 5%;
+}
+
+.footer h1{
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    padding: 7%;
+}
+
+.con{
+    padding: 0;
+    margin-left: 25%;
+    font-size: 35px;
+    font-family: 'Nixie One', cursive;
+    font-weight: 200;
+    width: 500px;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+.con h2{
+    padding: 0;
+    margin-left: -15%;
+    font-size: 40px;
+    font-family: 'Nixie One', cursive;
+    font-weight: 900;
+    width: 500px;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+/*Icons*/
+.icon a{
+    height: 130px;
+}
+
+.icon img{
+    height: 80px;
+    border-radius: 100px;
+    background-color: #ccc;
+    margin-right: 125px;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ic{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*back to top btn*/
+.btt a{
+    align-items: center;
+    text-decoration: none;
+    color: var(--grey);
+    margin: 0%;
+    padding: 0%;
+}
+.btt a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.btt img{
+    margin: 0%;
+}
+
+
+/*Copy rights footer*/
+
+.cc{
+    background-color: rgb(48, 35, 1);
+    text-align: center;
+}
+
+.cc p{
+    padding: -10%;
+    color: white;
+    font-size: 30px; 
 }
