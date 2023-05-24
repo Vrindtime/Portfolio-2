@@ -3,32 +3,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-:root{
+:root {
     --halfyellow: rgba(255, 208, 87, .7);
     --yellow: #FFD057;
     --grey: #e0e0e0;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-image: url("./UI/blacckbg.png");
     background-size: cover;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-*{
+/*Scroll Trans*/
+
+.hidden{
+    opacity: 0;
+    transition: all 5s;
+}
+
+.show{
+    opacity: 1;
+}
+
+
+* {
     font-family: 'Bebas Neue', cursive;
     color: rgba(255, 208, 87, 1);
     padding: 0%;
     margin: 0%;
     font-weight: 400;
-    font-size:40px;
+    font-size: 40px;
 }
-
-header{
+hr {
+    size: 1px;
+    border: dashed.5px;
+    color: rgb(245, 236, 187);
+}
+header {
     display: flex;
     width: 70%;
     height: 20vh;
@@ -38,38 +54,41 @@ header{
     justify-content: space-evenly;
 }
 
-.logo, 
-.links{
+.logo,
+.links {
     display: flex;
 }
 
-img{
+img {
     flex: 1;
     margin-right: 60vh;
 }
-nav{
-    flex:1;
+
+nav ul{
+    width: 600px;
 }
+
 /*logo*/
-.logo img{
+.logo img {
     width: 130px;
     border-radius: 100px;
 }
+
 /*logo animation*/
-img{
+img {
     opacity: 0;
     animation: img 3s ease-out forwards;
 }
 
 @keyframes img {
-    to{
+    to {
         opacity: 1;
     }
 }
 
 /*navbar*/
 
-li{
+li {
     flex: 2;
     flex-direction: flex-end;
     justify-content: space;
@@ -77,55 +96,55 @@ li{
     list-style: none;
 }
 
-li a{
+li a {
     margin: 0%;
     justify-content: center;
     font-size: 24px;
     font-family: 'Gothic A1', sans-serif;
     text-decoration: none;
-    color:rgba(255, 208, 87, .75)
+    color: rgba(255, 208, 87, .75)
 }
 
-.links li a:hover{
-    color:rgba(255, 208, 87, 1);
+.links li a:hover {
+    color: rgba(255, 208, 87, 1);
     text-shadow: 0px 0px 40px rgba(255, 208, 87, 1);
 }
 
 /*Animating Navbar for page loading*/
-li.A{
+li.A {
     opacity: 0;
     transform: translateY(-5rem);
     animation: head 1s ease-out forwards;
 }
 
 @keyframes head {
-    to{
+    to {
         transform: translate(0);
         opacity: 1;
     }
 }
 
-li.B{
+li.B {
     opacity: 0;
     transform: translateY(-5rem);
     animation: head 1.2s ease-out forwards;
 }
 
 @keyframes head {
-    to{
+    to {
         transform: translate(0);
         opacity: 1.4;
     }
 }
 
-li.C{
+li.C {
     opacity: 0;
     transform: translateY(-5rem);
     animation: head 1.6s ease-out forwards;
 }
 
 @keyframes head {
-    to{
+    to {
         transform: translate(0);
         opacity: 1;
     }
@@ -133,7 +152,7 @@ li.C{
 
 /*my text components on Portfolio page*/
 
-.main{
+.main {
     display: flex;
     justify-content: center;
     margin-left: 2%;
@@ -141,56 +160,56 @@ li.C{
     padding: 3%;
 }
 
-.intro-left{
+main .intro-left {
     margin-top: 3%;
 }
 
-main .intro-left{
+main .intro-left {
     opacity: 0;
     transform: translateX(-5rem);
     animation: inle 0.8s ease-out forwards;
 }
 
 @keyframes inle {
-    to{
+    to {
         transform: translate(0);
         opacity: 1;
     }
 }
 
-.intro-left p{
+.intro-left p {
     font-size: 25px;
     color: #e0e0e0;
     margin-left: 5%;
     font-family: 'Nixie One', cursive;
 }
 
-.intro-left h1{
+.intro-left h1 {
     font-size: 100px;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 900;
 }
 
-main .intro-left h1{
+main .intro-left h1 {
     opacity: 0;
     transform: translateX(3rem);
     animation: inri 1.5s ease-out forwards;
 }
 
 @keyframes inri {
-    to{
+    to {
         transform: translate(0);
         opacity: 1;
     }
 }
 
 /*right side of txt*/
-.intro-right{
+.intro-right {
     margin-top: 5%;
     align-items: center;
 }
 
-.intro-right p{
+.intro-right p {
     font-size: 29px;
     font-family: 'Nixie One', cursive;
     font-weight: 100;
@@ -201,21 +220,21 @@ main .intro-left h1{
     box-sizing: border-box;
 }
 
-main .intro-right{
+main .intro-right {
     opacity: 0;
     transform: translateX(5rem);
     animation: inri 1s ease-out forwards;
 }
 
 @keyframes inri {
-    to{
+    to {
         transform: translate(0);
         opacity: 1;
     }
 }
 
 /*button to contact me*/
-.CM{
+.CM {
     margin: 10%;
     margin-top: 5%;
     padding-left: 2%;
@@ -224,8 +243,9 @@ main .intro-right{
     background-color: transparent;
     font-size: 25px;
 }
+
 /*general properties of the txt box*/
-.CM{
+.CM {
     position: relative;
     display: inline-block;
     padding: 15px 30px;
@@ -236,128 +256,126 @@ main .intro-right{
     font-size: 20px;
     overflow: hidden;
     transition: 0.2s;
-   
+
 }
 
-.CM:hover{
+.CM:hover {
     color: rgb(53, 53, 53);
-    background:rgba(255, 208, 87, 1);
+    background: rgba(255, 208, 87, 1);
     box-shadow: 0 0 10px #FFD057;
     box-shadow: 0 0 40px #FFD057;
     box-shadow: 0 0 80px #FFD057;
     transition-delay: 0.3s;
 }
 
-.CM span{
+.CM span {
     position: absolute;
     display: block;
 }
 
-.CM span:nth-child(1){
+.CM span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg,transparent,#FFD057);
+    background: linear-gradient(90deg, transparent, #FFD057);
 }
-.CM:hover span:nth-child(1){
+
+.CM:hover span:nth-child(1) {
     left: 100%;
     transition: 1s;
 }
 
-.CM span:nth-child(3){
+.CM span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg,transparent,#FFD057);
+    background: linear-gradient(270deg, transparent, #FFD057);
 }
-.CM:hover span:nth-child(3){
+
+.CM:hover span:nth-child(3) {
     right: 100%;
     transition: 1s;
 }
 
-.CM span:nth-child(2){
+.CM span:nth-child(2) {
     top: -100%;
     right: 0%;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg,transparent,#FFD057);
+    background: linear-gradient(180deg, transparent, #FFD057);
 }
-.CM:hover span:nth-child(2){
+
+.CM:hover span:nth-child(2) {
     top: 100%;
     transition: 1s;
 }
 
-.CM span:nth-child(4){
+.CM span:nth-child(4) {
     bottom: -100%;
     left: 0%;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg,transparent,#FFD057);
+    background: linear-gradient(360deg, transparent, #FFD057);
 }
-.CM:hover span:nth-child(4){
+
+.CM:hover span:nth-child(4) {
     bottom: 100%;
     transition: 1s;
 }
 
-main .CM{
+main .CM {
     opacity: 0;
     transform: translateX(5rem);
     animation: but 1s ease-out forwards;
 }
 
 @keyframes but {
-    to{
+    to {
         transform: translate(0);
         opacity: 1;
     }
 }
 
-hr{
-    size: 1px;
-    border: dashed.5px;
-    color: rgb(245, 236, 187);
-}
-
 /*see: (Skill and Exerience section)*/
-.see{
+.see {
     padding: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "se e1 e2"
-    "tl e3 e4";
+    grid-template-areas:
+        "se e1 e2"
+        "tl e3 e4";
     gap: 5%;
 }
 
-.skill{
+.skill {
     grid-area: se;
 }
 
-.ex1{
+.ex1 {
     grid-area: e1;
 }
 
-.ex2{
+.ex2 {
     grid-area: e2;
 }
 
-.ex3{
+.ex3 {
     grid-area: e3;
 }
 
-.ex4{
+.ex4 {
     grid-area: e4;
 }
 
-.timeline{
+.timeline {
     grid-area: tl;
 }
 
-.timeline{
+.timeline {
     position: relative;
     top: -20%;
     margin: 69px;
@@ -366,13 +384,13 @@ hr{
     padding: 0 20px 0 30px;
 }
 
-.timeline div{
+.timeline div {
     padding: 10px 25px;
     font-size: 16px;
     height: 110px;
 }
 
-.timeline div::before{
+.timeline div::before {
     content: '';
     display: block;
     width: 10px;
@@ -385,7 +403,7 @@ hr{
     left: -9px;
 }
 
-.timeline div::after{
+.timeline div::after {
     content: '';
     display: block;
     border-radius: 50%;
@@ -399,7 +417,7 @@ hr{
     left: -9px;
 }
 
-.timeline div span::after{
+.timeline div span::after {
     content: '';
     display: block;
     border-radius: 50%;
@@ -413,12 +431,12 @@ hr{
     left: -9px;
 }
 
-.see h2{
+.see h2 {
     font-weight: 500;
     font-size: 60px;
 }
 
-.see p{
+.see p {
     font-size: 25px;
     font-family: 'Nixie One', cursive;
     font-weight: 200;
@@ -433,18 +451,18 @@ hr{
 
 /*Section footer*/
 
-.footer{
+.footer {
     padding: 5%;
 }
 
-.footer h1{
+.footer h1 {
     font-size: 120px;
     font-weight: 600;
     letter-spacing: 10px;
     padding: 7%;
 }
 
-.con{
+.con {
     padding: 0;
     margin-left: 25%;
     font-size: 35px;
@@ -455,7 +473,7 @@ hr{
     box-sizing: border-box;
 }
 
-.con h2{
+.con h2 {
     padding: 0;
     margin-left: -15%;
     font-size: 40px;
@@ -467,58 +485,63 @@ hr{
 }
 
 /*Icons*/
-.icon a{
+.icon a {
     height: 130px;
 }
 
-.icon img{
-    height: 80px;
-    border-radius: 100px;
+.icon img {
+    height: 60px;
+    padding: 2px;
+    border-radius: 25px;
     background-color: #ccc;
     margin-right: 125px;
 }
-
-.icon{
-    display: flex;
-    justify-content: space-between;
+.icon img:hover{
+    background-color: white;
 }
 
-.ic{
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ic {
     display: flex;
     margin: 0%;
     padding: 0%;
 }
 
 /*back to top btn*/
-.btt a{
+.btt a {
+    
     align-items: center;
     text-decoration: none;
     color: var(--grey);
     margin: 0%;
+    margin-left: 80%;
+    width: 300px;
     padding: 0%;
 }
-.btt a{
+
+.btt a {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
 }
 
-.btt img{
+.btt img {
     margin: 0%;
+    padding: 2px;
+    border-radius: 100px;
 }
 
 
 /*Copy rights footer*/
 
-.cc{
-    background-color: rgb(48, 35, 1);
+.cc p{
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
     text-align: center;
+    font-size: 18px;
 }
 
-.cc p{
-    padding: -10%;
-    color: white;
-    font-size: 30px; 
-}
