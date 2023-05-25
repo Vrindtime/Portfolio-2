@@ -566,3 +566,19 @@ main .CM {
 .title h1 {
     color: var(--grey),
 }
+
+@media screen and (width < 768px) {
+    /* CSS rules for screens with a maximum width of 768px or smaller */
+    /* Modify the layout to fit smaller screens */
+    body {
+      background-size: contain;
+    }
+  
+    /* Adjust the font size for smaller screens */
+    * {
+      font-size: 20px;
+      flex-direction: column;
+    }
+    /* Modify other styles as needed */
+    /* ... */
+  }
