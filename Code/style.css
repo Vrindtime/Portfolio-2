@@ -21,12 +21,12 @@ html {
 
 /*Scroll Trans*/
 
-.hidden{
+.hidden {
     opacity: 0;
     transition: all 5s;
 }
 
-.show{
+.show {
     opacity: 1;
 }
 
@@ -39,11 +39,13 @@ html {
     font-weight: 400;
     font-size: 40px;
 }
+
 hr {
     size: 1px;
     border: dashed.5px;
     color: rgb(245, 236, 187);
 }
+
 header {
     display: flex;
     width: 70%;
@@ -64,7 +66,7 @@ img {
     margin-right: 60vh;
 }
 
-nav ul{
+nav ul {
     width: 600px;
 }
 
@@ -141,6 +143,19 @@ li.C {
     opacity: 0;
     transform: translateY(-5rem);
     animation: head 1.6s ease-out forwards;
+}
+
+@keyframes head {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+li.D {
+    opacity: 0;
+    transform: translateY(-5rem);
+    animation: head 1.9s ease-out forwards;
 }
 
 @keyframes head {
@@ -256,6 +271,7 @@ main .intro-right {
     font-size: 20px;
     overflow: hidden;
     transition: 0.2s;
+    box-shadow: rgb(216, 235, 53) 3px 3px 6px 0px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
 
 }
 
@@ -496,7 +512,8 @@ main .CM {
     background-color: #ccc;
     margin-right: 125px;
 }
-.icon img:hover{
+
+.icon img:hover {
     background-color: white;
 }
 
@@ -513,7 +530,7 @@ main .CM {
 
 /*back to top btn*/
 .btt a {
-    
+
     align-items: center;
     text-decoration: none;
     color: var(--grey);
@@ -537,7 +554,7 @@ main .CM {
 
 /*Copy rights footer*/
 
-.cc p{
+.cc p {
     padding: 10px;
     background-color: #222;
     color: #fff;
@@ -545,3 +562,7 @@ main .CM {
     font-size: 18px;
 }
 
+/*AboutMe*/
+.title h1 {
+    color: var(--grey),
+}

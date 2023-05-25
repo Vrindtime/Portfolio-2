@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --halfyellow: rgba(255, 208, 87, .7);
+    --yellow: #FFD057;
+    --grey: #e0e0e0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("./UI/blacckbg.png");
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(255, 208, 87, 1);
+    padding: 0%;
+    margin: 0%;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+hr {
+    size: 1px;
+    border: dashed.5px;
+    color: rgb(245, 236, 187);
+}
+
+header {
+    display: flex;
+    width: 70%;
+    height: 20vh;
+    margin: auto;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo,
+.links {
+    display: flex;
+}
+
+img {
+    flex: 1;
+    margin-right: 60vh;
+}
+
+nav ul {
+    width: 600px;
+}
+
+/*logo*/
+.logo img {
+    width: 130px;
+    border-radius: 100px;
+}
+
+/*logo animation*/
+img {
+    opacity: 0;
+    animation: img 3s ease-out forwards;
+}
+
+@keyframes img {
+    to {
+        opacity: 1;
+    }
+}
+
+/*navbar*/
+
+li {
+    flex: 2;
+    flex-direction: flex-end;
+    justify-content: space;
+    text-align: center;
+    list-style: none;
+}
+
+li a {
+    margin: 0%;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Gothic A1', sans-serif;
+    text-decoration: none;
+    color: rgba(255, 208, 87, .75)
+}
+
+.links li a:hover {
+    color: rgba(255, 208, 87, 1);
+    text-shadow: 0px 0px 40px rgba(255, 208, 87, 1);
+}
+
+/*Animating Navbar for page loading*/
+li.A {
+    opacity: 0;
+    transform: translateY(-5rem);
+    animation: head 1s ease-out forwards;
+}
+
+@keyframes head {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+li.B {
+    opacity: 0;
+    transform: translateY(-5rem);
+    animation: head 1.2s ease-out forwards;
+}
+
+@keyframes head {
+    to {
+        transform: translate(0);
+        opacity: 1.4;
+    }
+}
+
+li.C {
+    opacity: 0;
+    transform: translateY(-5rem);
+    animation: head 1.6s ease-out forwards;
+}
+
+@keyframes head {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+li.D {
+    opacity: 0;
+    transform: translateY(-5rem);
+    animation: head 1.9s ease-out forwards;
+}
+
+@keyframes head {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+/*Main*/
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+}
+
+.left{
+    width: 1000px;
+    height: 600px;
+    margin-top: -15%;
+    transform: translateX(-5rem);
+    animation: right .6s ease-out forwards;
+}
+.left img{
+    width: 900px;
+    height: 600px;
+    transform: translateX(-5rem);
+    animation: right .6s ease-out forwards;
+}
+.left h1{
+    color: var(--yellow);
+    transform: translateX(-5rem);
+    animation: left 1s ease-out forwards;
+}
+
+@keyframes left {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.right {
+    margin: 0;
+    padding: 5%;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 15%;
+    width: 800px;
+    height: 800px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(6.8px);
+    transform: translateX(5rem);
+    animation: left 1s ease-out forwards;
+}
+@keyframes right {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+.right h1 {
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    width: 600px;
+    padding: 7%;
+}
+
+.right img{
+    border-radius: 100%;
+}
+
+.con p{
+    font-weight: 200;
+    font-family: 'Nixie One', cursive;
+    color: var(--grey);
+}
+
+
+
+.con{
+    padding: 0;
+    margin-left: 25%;
+    font-size: 35px;
+    font-family: 'Nixie One', cursive;
+    font-weight: 200;
+    width: 50px;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+.con h2 {
+    padding: 0;
+    margin-left: -15%;
+    font-size: 40px;
+    font-family: 'Nixie One', cursive;
+    font-weight: 900;
+    width: 50px;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+/*Icons*/
+.ic a {
+    width: 130px;
+    align-items: center;
+}
+
+.icon img {
+    height: 60px;
+    padding: 2px;
+    border-radius: 25px;
+    background-color: #ccc;
+}
+.icon img:hover{
+    background-color: white;
+}
+
+.ic {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Copy rights footer*/
+
+.cc p {
+    padding: 1px;
+    margin-bottom: 0;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
