@@ -51,7 +51,7 @@ header {
 
 img {
     flex: 1;
-    margin-right: 60vh;
+    margin-right: 0;
 }
 
 nav ul {
@@ -219,4 +219,34 @@ li.D {
     color: #fff;
     text-align: center;
     font-size: 18px;
+}
+
+
+@media screen and (width < 1200px) {
+    body{
+        width: 750px;
+    }
+
+    .img{
+        margin-right: 0;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .logo{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding: 2% 0%;
+    }
+
+    .main{
+        display: block;
+        padding: 2%;
+    }
 }

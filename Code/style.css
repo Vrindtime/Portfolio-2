@@ -63,7 +63,7 @@ header {
 
 img {
     flex: 1;
-    margin-right: 60vh;
+    
 }
 
 nav ul {
@@ -297,7 +297,7 @@ main .intro-right {
     background: linear-gradient(90deg, transparent, #FFD057);
 }
 
-.CM:hover span:nth-child(1) {
+    .CM:hover span:nth-child(1) {
     left: 100%;
     transition: 1s;
 }
@@ -358,9 +358,6 @@ main .CM {
 .see {
     padding: 3%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas:
         "se e1 e2"
         "tl e3 e4";
@@ -567,18 +564,99 @@ main .CM {
     color: var(--grey),
 }
 
-@media screen and (width < 768px) {
-    /* CSS rules for screens with a maximum width of 768px or smaller */
-    /* Modify the layout to fit smaller screens */
-    body {
-      background-size: contain;
+
+  
+  @media screen and (width< 1200px) {
+    
+
+    body{
+        width: 750px;
+    }
+
+    .img{
+        margin-right: 0;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .logo{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding: 2% 0%;
+    }
+
+    .main{
+        display: block;
+    }
+    
+    /* Collapse the grid on smaller screens */
+    .see {
+        display: block;
+      }
+    
+      /* Align the elements vertically */
+      .skill,
+      .timeline,
+      .ex1,
+      .ex2,
+      .ex3,
+      .ex4 {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      /* Remove the padding from the timeline divs */
+      .timeline div {
+        padding: 0;
+      }
+    
+      /* Change the font size of the h2 elements */
+      .skill h2,
+      .timeline h2,
+      .ex1 h2,
+      .ex2 h2,
+      .ex3 h2,
+      .ex4 h2 {
+        font-size: 30px;
+        margin-top: 30px;
+      }
+    
+      /* Change the font size of the p elements */
+      .skill p,
+      .timeline p,
+      .ex1 p,
+      .ex2 p,
+      .ex3 p,
+      .ex4 p {
+        font-size: 16px;
+      }
+
+      .footer{
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+      } 
+      
+      .icon{
+        justify-content: space-between;
+        align-items: center;
+        width: 20px;
+      }
+
+      .ic{
+        width: 10px;
+      }
+      .btt{
+        margin-top: 200px;
+      }
+
+
+
     }
   
-    /* Adjust the font size for smaller screens */
-    * {
-      font-size: 20px;
-      flex-direction: column;
-    }
-    /* Modify other styles as needed */
-    /* ... */
-  }
