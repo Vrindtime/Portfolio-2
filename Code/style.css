@@ -568,7 +568,12 @@ main .CM {
   
   @media screen and (width< 1200px) {
     
-
+    *{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
     body{
         width: 750px;
     }
