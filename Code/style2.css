@@ -568,9 +568,6 @@ main .CM {
       margin-right: 0;
     }
     
-    header {
-      justify-content: center;
-    }
     
     .logo {
       margin: 0;
@@ -578,6 +575,7 @@ main .CM {
     }
     
     nav ul {
+        width: 100vw;
       flex-direction: column;
       padding: 2% 0%;
     }
@@ -585,7 +583,9 @@ main .CM {
     .main {
       display: block;
     }
-    
+    .intro-right p{
+        min-width: 100%;
+    }
     /* Collapse the grid on smaller screens */
     .see {
       display: block;
