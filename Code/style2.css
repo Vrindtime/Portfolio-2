@@ -7,17 +7,13 @@
     --halfyellow: rgba(255, 208, 87, .7);
     --yellow: #FFD057;
     --grey: #e0e0e0;
+    --full: 100vw;
     scroll-behavior: smooth;
 }
 
 body {
-    background-image: url("./UI/blacckbg.png");
+    background-image: url("./UI/bg_portfolio.webp");
     background-size: cover;
-    width: 100vw;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 /*Scroll Trans*/
@@ -31,50 +27,31 @@ html {
     opacity: 1;
 }
 
-
 * {
-    font-family: 'Bebas Neue', cursive;
-    color: rgba(255, 208, 87, 1);
+    /* font-family: 'Bebas Neue', cursive; */
+    /* color: rgba(255, 208, 87, 1); */
     padding: 0%;
     margin: 0%;
-    font-weight: 400;
-    font-size: 40px;
+    /* font-weight: 400;
+    font-size: 30px; */
 }
 
 hr {
-    size: 1px;
-    border: dashed.5px;
+    border: dotted .5px;
     color: rgb(245, 236, 187);
 }
 
 header {
     display: flex;
-    width: 70%;
     height: 20vh;
-    margin: auto;
-    margin-top: 2%;
     align-items: center;
     justify-content: space-evenly;
+    width: 70vw;
 }
 
-.logo,
-.links {
-    display: flex;
-}
-
-img {
-    flex: 1;
-    
-}
-
-nav ul {
-    width: 600px;
-}
-
-/*logo*/
-.logo img {
-    width: 130px;
-    border-radius: 100px;
+.logo img{
+    width: 120px;
+    border-radius: 120px;
 }
 
 /*logo animation*/
@@ -89,12 +66,17 @@ img {
     }
 }
 
+.links {
+    display: flex;
+    width: 10vw;
+}
+
 /*navbar*/
 
 li {
     flex: 2;
     flex-direction: flex-end;
-    justify-content: space;
+    justify-content: space-evenly;
     text-align: center;
     list-style: none;
 }
@@ -170,10 +152,10 @@ li.D {
 
 .main {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-left: 2%;
-    margin: 3%;
-    padding: 3%;
+    width: var(--full);
+    height: 70vh;
 }
 
 main .intro-left {
@@ -201,6 +183,7 @@ main .intro-left {
 }
 
 .intro-left h1 {
+    color: var(--yellow);
     font-size: 100px;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 900;
@@ -231,7 +214,7 @@ main .intro-left h1 {
     font-weight: 100;
     margin: 1%;
     padding: 3%;
-    width: 600px;
+    width: 500px;
     color: #e0e0e0;
     box-sizing: border-box;
 }
@@ -262,6 +245,7 @@ main .intro-right {
 
 /*general properties of the txt box*/
 .CM {
+    font-family: 'Bebas Neue', cursive;
     position: relative;
     display: inline-block;
     padding: 15px 30px;
@@ -357,51 +341,58 @@ main .CM {
 
 /*see: (Skill and Exerience section)*/
 .see {
-    padding: 3%;
+    max-width: 100%;
+    padding: 2%;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "se e1 e2"
         "tl e3 e4";
-    gap: 5%;
+    gap: 2%;
 }
 
 .skill {
     grid-area: se;
+    
 }
 
 .ex1 {
     grid-area: e1;
+    
 }
 
 .ex2 {
     grid-area: e2;
+    
 }
 
 .ex3 {
     grid-area: e3;
+    
 }
 
 .ex4 {
     grid-area: e4;
+   
 }
-
 .timeline {
     grid-area: tl;
 }
-
 .timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     position: relative;
     top: -20%;
-    margin: 69px;
-    width: 360px;
     border-left: 2px solid #ccc;
     padding: 0 20px 0 30px;
+    font-family: 'Bebas Neue', cursive;
+    color: var(--yellow);
 }
-
 .timeline div {
     padding: 10px 25px;
     font-size: 16px;
-    height: 110px;
+    height: 90px;
 }
 
 .timeline div::before {
@@ -413,7 +404,7 @@ main .CM {
     background-color: #ccc;
     border: 3px solid #ddd;
     position: absolute;
-    top: 25px;
+    top: 113px;
     left: -9px;
 }
 
@@ -427,7 +418,7 @@ main .CM {
     background-color: #ccc;
     border: 3px solid #ddd;
     position: absolute;
-    top: 163px;
+    top: 482px;
     left: -9px;
 }
 
@@ -446,24 +437,20 @@ main .CM {
 }
 
 .see h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: var(--yellow);
     font-weight: 500;
     font-size: 60px;
-    color: var(--yellow);
 }
 
 .see p {
     font-size: 25px;
-    font-family: bebus nenu,sans serif;
     font-family: 'Nixie One', cursive;
     font-weight: 200;
-    width: 500px;
+    max-width: 100%;
     color: #e0e0e0;
     box-sizing: border-box;
 }
-
-/*SE Animation (parralax scrolling)*/
-
-
 
 /*Section footer*/
 
@@ -472,6 +459,8 @@ main .CM {
 }
 
 .footer h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: var(--yellow);
     font-size: 120px;
     font-weight: 600;
     letter-spacing: 10px;
@@ -499,7 +488,6 @@ main .CM {
     color: #e0e0e0;
     box-sizing: border-box;
 }
-
 /*Icons*/
 .icon a {
     height: 130px;
@@ -518,6 +506,7 @@ main .CM {
 }
 
 .icon {
+    margin-top: 5%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -530,12 +519,9 @@ main .CM {
 
 /*back to top btn*/
 .btt a {
-
     align-items: center;
     text-decoration: none;
     color: var(--grey);
-    margin: 0%;
-    margin-left: 80%;
     width: 300px;
     padding: 0%;
 }
@@ -543,6 +529,7 @@ main .CM {
 .btt a {
     display: flex;
     flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .btt img {
@@ -551,10 +538,10 @@ main .CM {
     border-radius: 100px;
 }
 
-
 /*Copy rights footer*/
 
 .cc p {
+    font-family: 'Bebas Neue', cursive;
     padding: 10px;
     background-color: #222;
     color: #fff;
@@ -567,99 +554,94 @@ main .CM {
     align-items: center;
     justify-content: center;
 }
-/*AboutMe*/
-.title h1 {
-    color: var(--grey),
-}
 
 
-  
-  @media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
+    * {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
     
-    *{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+    
+    .img {
+      margin-right: 0;
     }
-
-    .img{
-        margin-right: 0;
+    
+    header {
+      justify-content: center;
     }
-
-    header{
-        justify-content: center;
+    
+    .logo {
+      margin: 0;
+      padding: 0;
     }
-
-    .logo{
-        margin: 0;
-        padding: 0;
+    
+    nav ul {
+      flex-direction: column;
+      padding: 2% 0%;
     }
-
-    nav ul{
-        flex-direction: column;
-        padding: 2% 0%;
-    }
-
-    .main{
-        display: block;
+    
+    .main {
+      display: block;
     }
     
     /* Collapse the grid on smaller screens */
     .see {
-        display: block;
-      }
+      display: block;
+    }
     
-      /* Align the elements vertically */
-      .skill,
-      .timeline,
-      .ex1,
-      .ex2,
-      .ex3,
-      .ex4 {
-        display: flex;
+    /* Align the elements vertically */
+    .skill,
+    .timeline,
+    .ex1,
+    .ex2,
+    .ex3,
+    .ex4 {
+      display: flex;
+      flex-direction: column;
+    }
+    
+
+    /* Change the font size of the h2 elements */
+    .skill h2,
+    .timeline h2,
+    .ex1 h2,
+    .ex2 h2,
+    .ex3 h2,
+    .ex4 h2 {
+      font-size: 30px;
+      margin-top: 30px;
+    }
+    
+    /* Change the font size of the p elements */
+    .skill p,
+    .timeline p,
+    .ex1 p,
+    .ex2 p,
+    .ex3 p,
+    .ex4 p {
+      font-size: 16px;
+    }
+
+    .icon {
         flex-direction: column;
-      }
-    
-      /* Remove the padding from the timeline divs */
-      .timeline div {
-        padding: 0;
-      }
-    
-      /* Change the font size of the h2 elements */
-      .skill h2,
-      .timeline h2,
-      .ex1 h2,
-      .ex2 h2,
-      .ex3 h2,
-      .ex4 h2 {
-        font-size: 30px;
-        margin-top: 30px;
-      }
-    
-      /* Change the font size of the p elements */
-      .skill p,
-      .timeline p,
-      .ex1 p,
-      .ex2 p,
-      .ex3 p,
-      .ex4 p {
-        font-size: 16px;
-      }
-
-      .footer{
-        text-align: center;
-        padding: 0%;
-        margin: 0%;
-      } 
-      
-      .icon{
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        width: 20px;
-      }
+    }
 
-
-
-}
+    .ic{
+        margin-top: 5%;
+        min-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btt{
+        max-width: 100%;
+        align-items: center;
+    }
+    
+  }
+  
   
