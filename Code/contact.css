@@ -160,7 +160,7 @@ li.D {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5%;
+    padding: 0%;
 }
 
 .left img {
@@ -264,6 +264,7 @@ li.D {
     width: 100vw;
     align-items: center;
     justify-content: center;
+    margin: 2% 0%;
 }
 
 /*Copy rights footer*/
