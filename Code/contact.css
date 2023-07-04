@@ -163,16 +163,9 @@ li.D {
     padding: 5%;
 }
 
-.left{
-    width: 1000px;
-    height: 600px;
-    margin-top: -15%;
-    transform: translateX(-5rem);
-    animation: right .6s ease-out forwards;
-}
-.left img{
-    width: 900px;
-    height: 600px;
+.left img {
+    width: 826px;
+    height: 603px;
     transform: translateX(-5rem);
     animation: right .6s ease-out forwards;
 }
@@ -191,12 +184,11 @@ li.D {
 
 .right {
     margin: 0;
-    padding: 5%;
-    /* From https://css.glass */
+    padding: 0%;
     background: rgba(255, 255, 255, 0.29);
     border-radius: 15%;
-    width: 800px;
-    height: 800px;
+    width: 636px;
+    height: 659px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.5px);
     -webkit-backdrop-filter: blur(6.8px);
