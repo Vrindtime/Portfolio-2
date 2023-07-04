@@ -15,27 +15,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var exAnimation = gsap.from('.ex1, .ex2 ,.ex3 , .ex4', {
-        opacity: 0,
+        opacity: 0.5,
         x: 50,
         y: 50,
         duration: 1,
         ease: 'power3.out',
         scrollTrigger: {
             trigger: '.see',
-            start: 'top 80%',
+            start: 'top center',
             scrub: true, // Adjust the start position as needed
         },
     });
 
     var exAnimation = gsap.from('.skill, .timeline', {
-        opacity: 0,
+        opacity: .8,
         x: -50,
         y: 50,
         duration: 1,
         ease: 'power3.out',
         scrollTrigger: {
             trigger: '.see',
-            start: 'top 80%',
+            start: 'top center',
             scrub: true, // Adjust the start position as needed
         },
     });
