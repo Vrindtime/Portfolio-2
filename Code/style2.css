@@ -572,7 +572,7 @@ main .CM {
     }
     
     nav ul {
-        width: 100vw;
+      width: 100vw;
       flex-direction: column;
       padding: 2% 0%;
     }
