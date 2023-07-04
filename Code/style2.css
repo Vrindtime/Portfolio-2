@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 :root {
     --halfyellow: rgba(255, 208, 87, .7);
     --yellow: #FFD057;
@@ -28,12 +27,8 @@ body {
 }
 
 * {
-    /* font-family: 'Bebas Neue', cursive; */
-    /* color: rgba(255, 208, 87, 1); */
     padding: 0%;
     margin: 0%;
-    /* font-weight: 400;
-    font-size: 30px; */
 }
 
 hr {
@@ -179,7 +174,7 @@ main .intro-left {
     font-size: 25px;
     color: #e0e0e0;
     margin-left: 5%;
-    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .intro-left h1 {
@@ -210,13 +205,14 @@ main .intro-left h1 {
 
 .intro-right p {
     font-size: 29px;
-    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     margin: 1%;
     padding: 3%;
     width: 500px;
     color: #e0e0e0;
     box-sizing: border-box;
+    text-align: justify;
 }
 
 main .intro-right {
@@ -445,7 +441,7 @@ main .CM {
 
 .see p {
     font-size: 25px;
-    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     max-width: 100%;
     color: #e0e0e0;
@@ -471,7 +467,7 @@ main .CM {
     padding: 0;
     margin-left: 25%;
     font-size: 35px;
-    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     width: 500px;
     color: #e0e0e0;
@@ -482,7 +478,7 @@ main .CM {
     padding: 0;
     margin-left: -15%;
     font-size: 40px;
-    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     width: 500px;
     color: #e0e0e0;
