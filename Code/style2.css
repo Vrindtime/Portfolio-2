@@ -345,7 +345,7 @@ main .CM {
     grid-template-areas:
         "se e1 e2"
         "tl e3 e4";
-    gap: 2%;
+    gap: 5%;
 }
 
 .skill {
