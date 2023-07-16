@@ -33,6 +33,7 @@ body {
 }
 
 hr {
+    margin: 3% 0%;
     border: dotted .5px;
     color: rgb(245, 236, 187);
 }
